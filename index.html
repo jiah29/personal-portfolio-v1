@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Jia Hao Choo</title>
+  </head>
+  <body onload="typeWriter(), showAlert()" onscroll="offList()">
+    <header>
+      <h1>Jia Hao Choo</h1>
+      <nav>
+        <i class="fas fa-bars" id="hamburger" tabindex="1"></i>
+        <ul id="navlinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li id="dropdown-menu"><a href="#">Projects <i class="fas fa-caret-down"></i></a>
+            <ul id="dropdown">
+              <li><a href="technical.html">Technical Projects</a></li>
+              <li><a href="research.html">Research</a></li>
+              <!-- <li><a href="#">Photography &amp; Filmmaking</a></li> -->
+            </ul>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <div id="photo">
+        <img src="images/profile.jpeg" alt="my profile picture" id="profile-photo">
+      </div>
+      <div id="intro">
+        <div id="title">
+          <h1 id="titletxt"># </h1>
+        </div>
+        <div id="introtxt">
+          <h2>My name is <span class="name">Jia Hao Choo</span>. I am a second-year student at <span class="name"><a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a></span>, studying <span class="subjects" id="cs" onmouseover="changeImage(this)" onmouseleave="revertImage(this)"><a href="https://web.cs.toronto.edu/" target="_blank">Computer Science specialist</a></span>, <span class="subjects" id="geo" onmouseover="changeImage(this)" onmouseleave="revertImage(this)"><a href="https://geography.utoronto.ca/" target="_blank">Geographic Information Systems</a></span> & <span class="subjects" id="stats" onmouseover="changeImage(this)" onmouseleave="revertImage(this)"><a href="https://www.statistics.utoronto.ca/" target="_blank">Statistics</a></span> Minor.
+            I am interested in learning about how we can use technology (ethically) to solve contemporary global challenges and improve people's quality of life. 
+            I have excellent time management skills and have experience in mentoring, team leading and event planning. I am also technologically adept and quick to learn any new technical skills.
+          </h2>
+        </div>
+        <div id="socials">
+          <a href="https://www.linkedin.com/in/jiahaochoo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>     <a href="https://github.com/jiah29/" target="_blank"><i class="fab fa-github"></i></a>     <a href="mailto:jiahao.choo@mail.utoronto.ca?cc=jhchoo.0629@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
