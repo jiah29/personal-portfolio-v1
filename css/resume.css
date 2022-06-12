@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+@media screen and (min-width: 0px){
+
+    /** Navbar section - DO NOT REMOVE **/
+
+    body {
+        background-color: #F1CD4B;
+        font-family: 'Roboto Slab', serif;
+        color: #FFFFFF;
+        margin: auto;
+    }
+    
+    header{
+        background-color: #333232;
+        width: 100%;
+        height: 4.6em;
+        margin: auto;
+    }
+    
+    h1 {
+        display: inline-block;
+        width: 60%;
+        padding-left: 3.5%;
+        font-size: 170%;
+    }
+
+    #hamburger{
+        width: 40%;
+        font-size: 2em;
+        text-align: right;
+        display: inline-block;
+        position: relative;
+        top: -1.6em;
+        left: 53%;
+    }
+
+    header nav ul{
+        list-style: none;
+        display: none;
+    }
+
+    header nav>ul {
+        position: fixed;
+        width: 100%;
+        left: -2.5em;
+        top: 3em;
+    }
+
+    header nav ul li{
+        background-color: #333232;
+        padding-left: 1%;
+        border-bottom: solid 1px #FFFFFF;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+
+    header nav ul li a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-weight: bolder;
+    }
+
+    #dropdown {
+        display: none;
+    }
+
+    #dropdown-menu:hover #dropdown{
+        display: block;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    /** End of Navbar section - DO NOT REMOVE **/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #000000;
+    }
+
+    #photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #photo img{
+        width: 70%;
+        margin-bottom: 0.3em;
+    }
+
+    #photo h1, #photo h2, #photo h3, #photo p{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 0.3em;
+    }
+
+    #photo h2{
+        font-size: 1.2em;
+    }
+
+    #photo p{
+        font-size: 0.8em;
+        margin-top: 5%;
+        font-style: italic;
+        margin-bottom: 5%;
+    }
+
+    #resume {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        padding-left: 1.2em;
+        padding-top: 1.5em;
+        font-size: 0.8em;
+        margin-right: 10%;
+    }
+
+    details {display: inline-block;margin-bottom: 2%;}
+
+    details ul li {
+        margin-bottom: 10px
+    }
+
+    details a{
+        background-color: inherit;
+        text-decoration: none;
+        color: inherit;
+        transition: none;
+        background-image: linear-gradient(#E5625E, #E5625E);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size: 100% 2px;
+        transition: background-size .5s, background-position .3s ease-in .5s;
+    }
+
+    details a:hover{
+        background-color: inherit;
+        text-decoration: none;
+        color: inherit;
+        background-size: 100% 100%;
+        background-position: 0% 0%;
+        transition: background-position .5s, background-size .3s ease-in .5s;
+    }
+
+    summary {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 1.15em;
+    }
+
+    .section {
+        font-size: 0.8em;
+        margin-bottom: 0.8%;
+    }
+
+    .courses {
+        list-style: none;
+    }
+
+    .description {
+        font-size: 1.1em;
+        border: solid 1px #333232;
+        padding: 0.3em;
+    }
+
+    .courses li{
+        margin-bottom: 0;
+    }
+
+    .course-list {
+        margin-bottom: 0.8%;
+    }
+
+    #date {
+        color: #000000;
+    }
+
+    .skills {
+        list-style: none;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .skills li {
+        display: inline;
+        margin-right: 0.8em;
+        padding-top: 0.8em;
+        line-height: 2em;
+    }
+
+    .skills li i{
+        font-size: 1.8em;
+        margin-right: 0.2em;
+    }
+
+    #categories {
+        list-style: none;
+    }
+
+    #toggle {
+        color: #000000;
+        width: 95%;
+        position:fixed;
+        z-index: 1;
+        top: 40em;
+        left: 89.3%;
+    }
+
+    #icons {
+        display: none;
+        position: fixed;
+        top: 24em;
+        width: 5%;
+        left: 89.5%;
+        line-height: 2.5em;
+    }
+
+    #socials i{
+        font-size: 2em;
+        color: #000000;
+    }
+
+    .skills .special {
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+
+    /** Navbar section - DO NOT REMOVE **/
+    body {
+        background-color: #F1CD4B;
+        font-family: 'Roboto Slab', serif;
+        color: #FFFFFF;
+        margin: auto;
+    }
+
+    header{
+        background-color: #333232;
+        width: 100%;
+        height: 5em;
+        margin: auto;
+    }
+
+    header h1 {
+        width: 43%;
+        display: inline-block;
+        margin: auto;
+        float: left;
+        height: 100%;
+        font-size: 3em;
+        padding-top: 0.5%;
+        padding-left: 2%;
+    }
+
+    header nav {
+        width: 54%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        text-align: right;
+        padding: 0px;
+    }
+
+    header nav ul {
+        list-style: none;
+        height: 100%;
+        position: relative;
+        left: -3em;
+        top: 0em;
+        display: block;
+    }
+
+    header nav ul li{
+        display: block;
+        float: right;
+        margin: 0.45em;
+        font-size: 1.4em;
+        border-bottom: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header nav ul li a{
+        font-family: 'Roboto Slab', serif;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #dropdown-menu {
+        position: relative;
+    }
+
+    #dropdown {
+        position: absolute;
+        display: none;
+        width: 10em;
+        left: -2.2em;
+        top: 1.3em;
+        height:fit-content;
+        z-index: 1;
+    }
+
+    #dropdown li{
+        width: 92%;
+        border-bottom: solid 1px #FFFFFF;
+        background-color: #333232;
+        font-size: 0.7em;
+        text-align: left;
+        margin: 0px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        transition: background-color 200ms;
+    }
+
+    #dropdown-menu:hover #dropdown{
+        display:block;
+    }
+
+    li a{
+        background-color: #333232;
+        transition: background-color 200ms;
+    }
+
+    li a:hover {
+        background-color: #E5625E;
+    }
+
+    #dropdown li:hover {
+        background-color: #E5625E;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    /** End of Navbar section - DO NOT REMOVE **/
+
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        color: #000000;
+    }
+
+    #resume {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        height: fit-content;
+        padding-left: 2em;
+        padding-top: 1.5em;
+        font-size: 1em;
+        margin-right: 10%;
+    }
+
+    details {display: inline-block;margin-bottom: 2%;}
+
+    details ul li {
+        margin-bottom: 10px
+    }
+
+    details a{
+        background-color: inherit;
+        text-decoration: none;
+        color: inherit;
+        transition: none;
+        background-image: linear-gradient(#E5625E, #E5625E);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size: 100% 2px;
+        transition: background-size .5s, background-position .3s ease-in .5s;
+    }
+
+    details a:hover{
+        background-color: inherit;
+        text-decoration: none;
+        color: inherit;
+        background-size: 100% 100%;
+        background-position: 0% 0%;
+        transition: background-position .5s, background-size .3s ease-in .5s;
+    }
+
+    #photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        width: 30%;
+        height: 90vh;
+        justify-content: flex-start;
+    }
+
+    #photo img{
+        width: 70%;
+        margin-bottom: 0.3em;
+    }
+
+    #photo h1, #photo h2, #photo h3, #photo p{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 0.3em;
+    }
+
+    #photo h2{
+        font-size: 1.2em;
+    }
+
+    #photo p{
+        margin-top: 5%;
+        font-style: italic;
+    }
+
+    summary {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 1.15em;
+    }
+
+    #socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 5%;
+        height: 90vh;
+        position: fixed;
+        margin-left: 90%;
+    }
+
+    #socials i{
+        display: block;
+        margin: 0.5em;
+        font-size: 2em;
+    }
+
+    #socials a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #icons{
+        display: block;
+        position: fixed;
+        top: 6em;
+        left: 92.5%;
+        line-height: 0;
+    }
+
+    .section {
+        font-size: 0.8em;
+        margin-bottom: 0.8%;
+    }
+
+    .courses {
+        list-style: none;
+    }
+
+    .description {
+        font-size: 1.1em;
+        border: solid 1px #333232;
+        padding: 0.3em;
+    }
+
+    .courses li{
+        margin-bottom: 0;
+    }
+
+    .course-list {
+        margin-bottom: 0.8%;
+    }
+
+    #date {
+        color: #000000;
+    }
+
+    .skills {
+        list-style: none;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .skills li {
+        display: inline;
+        margin-right: 0.8em;
+        padding-top: 0.8em;
+        line-height: 2em;
+    }
+
+    .skills li i{
+        font-size: 1.8em;
+        margin-right: 0.2em;
+    }
+
+    #categories {
+        list-style: none;
+    }
+
+    .skills .special {
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
